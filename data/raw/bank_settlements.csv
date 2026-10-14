@@ -1,0 +1,10 @@
+﻿transaction_id,settlement_date,amount,currency,status
+TXN1001,2026-09-02,125.50,USD,settled
+TXN1002,2026-09-02,80.00,USD,settled
+TXN1003,2026-09-03,40.25,EUR,settled
+TXN1005,2026-09-04,200.00,USD,settled
+TXN1006,2026-09-04,15.00,USD,settled
+TXN1007,2026-09-05,60.00,USD,settled
+TXN1008,2026-09-05,10.00,USD,settled
+TXN1009,2026-09-06,35.00,USD,settled
+TXN1010,2026-09-06,75.00,USD,settled

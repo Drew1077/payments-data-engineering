@@ -1,0 +1,13 @@
+﻿Payment Reconciliation Rules
+===========================
+
+1. Input sources: processor_transactions.csv and bank_settlements.csv.
+2. Required fields: transaction_id, date, amount, currency, and status.
+3. Duplicate transaction IDs are quarantined within their source; do not arbitrarily match duplicates.
+4. Financial matching requires a unique transaction ID, exact decimal amount, and identical currency.
+5. Status differences are reported separately when the financial fields match.
+6. IDs present in only one source are reported as missing from the other source.
+7. Amount and currency mismatches are reported as distinct exception types.
+8. Invalid required fields, amounts, dates, currencies, and statuses are reported, not silently dropped.
+9. Each output record must preserve the transaction ID and an explicit reconciliation or exception reason.
+10. Synthetic input data must remain deterministic so tests can assert expected outcomes.
